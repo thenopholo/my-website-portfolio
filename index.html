@@ -14,27 +14,36 @@
     <title>TD&D</title>
   </head>
   <body>
-    <header>
-      <img src="/assets/svg/td&_logo.svg" alt="tdd_logo" />
-      <span>TD&D</span>
-      <button><ion-icon name="menu"></ion-icon></button>
-    </header>
+    <div class="headerContainer">
+      <header class="header">
+        <img src="/assets/svg/td&_logo.svg" class="header__logo" alt="tdd_logo" />
+        <span class="header__title">TD&D</span>
+        <button class="header__menu"><img src="/assets/svg/menu.svg" alt="menu" class="header__menuIcon"></button>
+      </header>
+    </div>
 
-    <section id="hero">
-      <h1>CRIATIVO E INOVADOR</h1>
-      <img src="/assets/img/Rectangle 6.png" class="cup" alt="dev_coffe" />
-      <img
-        src="/assets/img/Rectangle 8.png"
-        class="macbook"
-        alt="dev_computer"
-      />
-      <p>
-        criações inovadoras, priorizando a experiência do usuário e com páginas
-        de alta conversão.
-      </p>
-      <button>
-        Vamos criar juntos?<img src="/assets/svg/icon_button_hero.svg" alt="" />
-      </button>
+    <section class="hero">
+      <div class="hero__line1">
+        <h1 class="hero__headline1">CRIATIVO E</h1>
+        <img src="/assets/img/Rectangle 6.png" class="hero__img1" alt="dev_coffe"/>
+      </div>
+
+      <div class="hero__line2">
+        <h1 class="hero__headline2">INOVADOR</h1>
+        <img src="/assets/img/Rectangle 8.png" class="hero__img2" alt="dev_computer"/>
+      </div>
+
+      <div class="hero__cta">
+        <p class="hero__littletxt">
+          criações inovadoras, priorizando a experiência do usuário e com páginas
+          de alta conversão.
+        </p>
+        <a href="#" class="hero__ctaLink">
+          <button class="hero__btn">
+            <p class="hero__btnText">Vamos criar juntos?</p><img src="/assets/svg/icon_button_hero.svg" class="hero__btnIcon" alt="arrow_icon" />
+          </button>
+        </a>
+      </div>
     </section>
 
     <section id="about-me">

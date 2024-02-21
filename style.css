@@ -12,12 +12,144 @@ html, body {
 
 body {
   font-family: 'Montserrat', 'Plus Jakarta Sans';
-  line-height: 1.6;
-  font-size: 16px;
-  background-color: #ffffff;
-  color: #333333;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #18181B;
+  display: block;
+}
+
+/* HEADER CSS*/
+
+.headerContainer{
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px 0px 0px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  width: 547px;
+  height: 84px;
+  background-color: #33333380;
+  border: solid 1px #ffffff30;
+  border-radius: 10px;
+}
+
+.header__logo{
+  width: 36px;
+  height: 36px;
+  margin: 24px 0px 24px 24px;
+}
+
+.header__title{
+  font-family: 'Plus Jakarta Sans';
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 24px 350px 24px 10px;
+}
+
+.header__menu{
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.header__menuIcon{
+  width: 36px;
+  color: #ffffff;
+  align-items: left;
+}
+
+/* HERO CSS*/
+
+.hero{
+  width: 100%;
+  position: relative;
+}
+
+.hero__line1{
+  display: flex;
+  justify-content: center;
+}
+
+.hero__headline1{
+  font-family: 'Plus Jakarta Sans';
+  font-size: 224px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.hero__img1{
+  width: 127px;
+  height: 179px;
+  margin: 59px 0px 0px 15px;
+}
+
+.hero__line2{
+  display: flex;
+  justify-content: center;
+}
+
+.hero__headline2{
+  font-family: 'Plus Jakarta Sans';
+  font-size: 224px;
+  font-weight: 900;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__img2{
+  position: absolute;
+  z-index: 1;
+  width: 447px;
+  height: 451px;
+  margin: 0px 900px 0px 0px;
+}
+
+.hero__cta{
+  display: flex;
+  justify-content: center;
+}
+
+.hero__littletxt{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  color: #A1A1AA;
+  width: 392px;
+  height: 114px;
+  margin: 70px 0px 0px 350px;
+}
+
+.hero__ctaLink{
+  text-decoration: none;
+}
+
+.hero__btn{
+  display: flex;
+  justify-content: center;
+  background-color: #33333380;
+  border: solid 1px #ffffff30;
+  border-radius: 100px;
+  width: 392px;
+  height: 208px;
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: start;
+  padding: 16px 16px 16px 40px;
+}
+
+.hero__btnText{
+  margin: 15px 0px 0px 0px;
+}
+
+.hero__btnIcon{
+  width: 176px;
+  height: 176px;
 }
 
 /* Add media queries for responsive breakpoints as needed */
