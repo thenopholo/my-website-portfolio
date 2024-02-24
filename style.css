@@ -153,6 +153,7 @@ body {
   color: #ffffff;
   text-align: start;
   padding: 16px 16px 16px 40px;
+  cursor: pointer;
 }
 
 .hero__btnText{
@@ -169,6 +170,7 @@ body {
 .aboutMeSkillEmail{
   display: flex;
   justify-content: center;
+  margin-bottom: 54px;
 }
 
 
@@ -316,6 +318,85 @@ body {
   cursor: pointer;
   position: absolute;
   right: 0px;
+}
+
+/* What I Do */
+
+.whatIDo{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.whatIDo__block{
+  width: 1312px;
+}
+
+.whatIDo__title{
+  font-family: 'Montserrat';
+  color: #A1A1AA;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.whstIDo__block h2{
+  font-family: 'Plus Jakarta Sans';
+  font-size: 92px;
+}
+
+.line{
+  display: flex;
+}
+
+.whatIDo__line1{
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+.whatIDo__line2{
+  color: #52525B;
+}
+
+.whatIDo__line3{
+  color: #4F46E5;
+  margin-right: 24px;
+}
+
+.whatIDo__line4{
+  color: #7C3AED;
+  margin-right: 24px;
+}
+
+.whatIDo__line5 {
+  color: #52525B;
+}
+
+.whatIDo__line6 {
+  color: #52525B;
+  margin-right: 24px;
+}
+
+.whatIDo__line7 {
+  color: #7C3AED;
+  margin-right: 24px;
+}
+
+.whatIDo__line8 {
+  color: #52525B;
+  margin-right: 24px;
+}
+
+.whatIDo__line8__mobileIcon{
+  margin-right: 24px;
+}
+
+.whatIDo__line8_2 {
+  color: #52525B;
+  margin-right: 24px;
+}
+
+.whatIDo__line9 {
+  color: #4F46E5;
 }
 
 /* Add media queries for responsive breakpoints as needed */
