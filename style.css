@@ -326,6 +326,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 54px;
 }
 
 .whatIDo__block{
@@ -397,6 +398,143 @@ body {
 
 .whatIDo__line9 {
   color: #4F46E5;
+}
+
+
+.portfolio{
+  width: 100%;
+}
+
+.portfolio__title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
+  margin-bottom: 54px;
+}
+
+.portfolio__title__block h2{
+  font-size: 128px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.portfolio__title__block p{
+  font-size: 36px;
+  color: #A1A1AA;  
+  margin-bottom: 54px;
+}
+
+.portfolio__flex{
+  display: flex;
+  justify-content: center;
+  background-color: #27272A;
+  border-radius: 24px;
+  width: 1312px;
+  height: 224px;
+  margin: 0px 0px 54px 0px;
+}
+
+.portfolio__flex__right{
+  display: flex;
+  margin-top: 44px;
+}
+
+.portfolio__flex__right img{
+  margin: 34px 0px 0px 24px;
+}
+
+.portfolio__flex__left {
+  display: flex;
+  margin-top: 44px;
+}
+
+.portfolio__flex__left img {
+  margin: 34px 24px 0px 0px;
+}
+
+.dark_ae_logo{
+  width: 62px;
+  height: 62px;
+}
+
+.dark_ai_ps_logo{
+  width: 112px;
+  height: 64px;
+}
+
+.dark_dart_flutter_logo{
+  width: 115px;
+  height: 71px;
+}
+
+.dark_webdev_logo{
+  width: 134px;
+  height: 58px;
+}
+
+.flex__right__txt{
+  font-family: 'Montserrat';
+  margin: 0px 24px;
+}
+
+.flex__left__txt {
+  font-family: 'Montserrat';
+  margin: 0px 24px;
+}
+
+.flex__right__txt h3{
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.flex__left__txt h3{
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.flex__right__txt p {
+  font-size: 24px;
+  color: #A1A1AA;
+  font-weight: 300;
+}
+
+.flex__left__txt p {
+  font-size: 24px;
+  color: #A1A1AA;
+  font-weight: 300;
+}
+
+.portfolio__flex_right__title{
+  width: 237px;
+  height: 224px;
+  background-color: #4F46E5;
+  border-radius: 0px 24px 24px 0px;
+  padding: 24px;
+  color: #ffffff;
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.portfolio__flex_right__title h3{
+  margin-top: 14px;
+}
+
+.portfolio__flex_left__title{
+  width: 237px;
+  height: 224px;
+  background-color: #7C3AED;
+  border-radius: 24px 0px 0px 24px;
+  padding: 24px;
+  color: #ffffff;
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+
+}
+
+.portfolio__flex_left__title h3 {
+  margin-top: 14px;
 }
 
 /* Add media queries for responsive breakpoints as needed */
