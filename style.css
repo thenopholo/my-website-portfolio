@@ -422,6 +422,7 @@ body {
   font-size: 36px;
   color: #A1A1AA;  
   margin-bottom: 54px;
+  text-align: center;
 }
 
 .portfolio__flex{
@@ -536,6 +537,167 @@ body {
 .portfolio__flex_left__title h3 {
   margin-top: 14px;
 }
+
+/* PARNERSHIPS CSS */
+
+.partnerships{
+  width: 100%;
+}
+
+.parnerships_center{
+  display: flex;
+  justify-content: center;
+}
+
+.parnerships__eveo{
+  width: 1312px; 
+  height: 402px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 16px 24px;
+  position: relative;
+  margin-bottom: 24px;;
+}
+
+.parnerships__eveo__txt{
+  display: flex;
+  justify-content: space-between;
+}
+
+.parnerships__eveo__txt h3{
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 400;
+  color: #18181B;
+}
+
+.parnerships__eveo__txt p{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 300;
+  color: #18181B;
+}
+
+.parnerships__eveo__logo{
+  width: 434px;
+  height: 138px;
+  position: absolute;
+  right: 456px;
+  top: 150px;
+}
+
+.parnership__eveo__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.parnerships__eveo__bottom__number{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 300;
+  color: #18181B;
+  position: absolute;
+  bottom: 16px;
+}
+
+.parnerships__eveo__btn{
+  background-color:  transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  right: 40px;
+}
+
+.parnership__eveo__bottom_arrow{
+  width: 41px;
+  height: 41px;
+}
+
+.parnerships__otherBrands{
+  display: flex;
+}
+
+.parnerships__otherBrands__v4{
+  width: 648px;
+  height: 270px;
+  background-color: #4F46E5;
+  border-radius: 24px;
+  padding: 16px 24px;
+  position: relative;
+}
+
+.parnerships__otherBrands__v4__txt{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: right;
+}
+
+.parnerships__otherBrands__v4__logo{
+  width: 392px;
+  height: 84px;
+  position: absolute;
+  left: 120px;
+  top: 90px;
+}
+
+.parnerships__otherBrands__v4__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.parnerships__otherBrands__v4__number{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  position: absolute;
+  bottom: 16px;
+}
+
+.parnerships__otherBrands__v4__btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.parnerships__otherBrands__v4__bottom__arrow{
+  width: 21px;
+  height: 21px;
+}
+
+.parnerships__otherBrands__ambev{
+  width: 648px;
+  height: 270px;
+  background-color: #7C3AED;
+  border-radius: 24px;
+  padding: 16px 24px;
+  position: relative;
+  margin-left: 24px;
+}
+
+.parnerships__otherBrands__ambev__txt{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: right;
+}
+
+.parnerships__otherBrands__ambev__logo{
+  width: 392px;
+  height: 84px;
+  position: absolute;
+  left: 120px;
+  top: 60px;
+}
+
 
 /* Add media queries for responsive breakpoints as needed */
 @media (min-width: 600px) {
