@@ -701,6 +701,7 @@ body {
 
 .testmonials{
   width: 100%;
+  margin-bottom: 54px;
 }
 
 .testmonials__center{
@@ -781,6 +782,119 @@ body {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+/* CONTACT CSS */
+
+.contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__center{
+  width: 1312px;
+  height: 751px;
+  border-radius: 24px;
+  background-color: #27272A;
+  padding: 24px;
+  
+}
+
+.contact h3{
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 300;
+  color: #A1A1AA;
+}
+
+.contact h2{
+  font-family: 'Montserrat';
+  font-size: 92px;
+  font-weight: 500;
+  color: #7C3AED;
+}
+
+.diagonal_arrow_white{
+  width: 54px;
+  height: 54px;
+}
+
+.contact__btn__flex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+}
+
+.contact__btn{
+background-color: #2C2C2F;
+border: none;
+padding: 54px;
+border-radius: 100px;
+cursor: pointer;
+}
+
+.contact__btn:hover{
+  background-color: #7C3AED;
+}
+
+.contact__btn ion-icon{
+  width: 47px;
+  height: 47px;
+  color: #A78BFA;
+}
+
+.contact__btn ion-icon:hover{
+  color: #27272A;
+}
+
+.contact__btn i{
+  font-size: 47px;
+  color: #A78BFA;
+}
+
+.contact__btn i:hover{
+  color: #27272A;
+}
+
+.contact__btn__txt{
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 500;
+  color: #A1A1AA;
+  margin: 0px 0px 0px 24px;
+}
+
+/* FOOTER CSS*/
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 24px;
+  position: relative;
+}
+
+.footer__myLogo img{
+  width: 36px;
+  height: 36px;
+  margin-right: 14px;
+
+}
+
+.footer__myLogo span{
+  font-family: 'Plus Jakarta Sans';
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer p{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
+  color: #A1A1AA;
+  align-items: center;
 }
 
 /* Add media queries for responsive breakpoints as needed */
