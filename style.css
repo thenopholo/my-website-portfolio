@@ -844,7 +844,7 @@ cursor: pointer;
   color: #A78BFA;
 }
 
-.contact__btn ion-icon:hover{
+.contact__btn:hover ion-icon{
   color: #27272A;
 }
 
@@ -853,7 +853,7 @@ cursor: pointer;
   color: #A78BFA;
 }
 
-.contact__btn i:hover{
+.contact__btn:hover i{
   color: #27272A;
 }
 
