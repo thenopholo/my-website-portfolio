@@ -547,6 +547,7 @@ body {
 
 .parnerships_center{
   margin-bottom: 54px;
+  margin: 0px 180px;
 }
 
 .parnerships__eveo{
@@ -872,14 +873,13 @@ cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   margin: 24px;
-  position: relative;
+  align-items: flex-end;
 }
 
 .footer__myLogo img{
   width: 36px;
   height: 36px;
   margin-right: 14px;
-
 }
 
 .footer__myLogo span{
@@ -894,7 +894,6 @@ cursor: pointer;
   font-size: 16px;
   font-weight: 300;
   color: #A1A1AA;
-  align-items: center;
 }
 
 /* Add media queries for responsive breakpoints as needed */
