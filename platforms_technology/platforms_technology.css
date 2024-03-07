@@ -55,6 +55,7 @@ body {
     position: absolute;
     top: 18px;
     right: 480px;
+    cursor: pointer;
 }
 
 .header__menu {
@@ -105,7 +106,7 @@ body {
     /* width: 127px;
     height: 179px; */
     margin: 59px 0px 0px 15px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .hero__line2 {
@@ -179,4 +180,355 @@ body {
 .hero__btnIcon {
     width: 176px;
     height: 176px;
+}
+
+.bentoWorkFormat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bentoWorkFormat____txtBlock__title{
+    font-size: 128px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.bentoWorkFormat____txtBlock__txt{
+    font-size: 36px;
+    color: #A1A1AA;
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.bentoWorkForma__bentos{
+    width: 1321px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.card {
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    background-color: #33333380;
+    border: solid 1px #ffffff30;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.bento01{
+    height: 200px;
+    flex: 0 1 70%;
+}
+
+.bento02{
+    height: 200px;
+    flex: 0 1 15%;
+}
+
+.bento03{
+    height: 200px;
+    flex: 0 1 15%;
+}
+
+.bento04 {
+    height: 200px;
+    flex: 0 1 53%;
+}
+
+.bento05 {
+    height: 200px;
+    flex: 0 1 15%;
+}
+
+/* ------------------BENTO 01------------------ */
+
+.bento01__content{
+    display: block;
+    flex-direction: row;
+    padding: 24px;
+    position: relative;
+}
+
+.bento01__icon{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #7C3AED;
+    border-radius: 8px;
+    padding: 14px;
+    margin-right: 24px;
+    margin-bottom: 14px;
+}
+
+.bento01__icon img{
+    color: #A78BFA;
+}
+
+.bento01__content__title{
+    font-family: 'Montserrat';
+    color: #ffffff80;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.bento01:hover .bento01__content__title{
+    color: #ffffff;
+}
+
+.bento01__content__p{
+    font-family: 'Montserrat';
+    color: #A1A1AA;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.bento01__btn__icon{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    rotate: 90deg;
+    margin: 155px 14px 0px 0px;
+}
+
+/* ------------------BENTO 02------------------ */
+
+.bento02__content {
+    display: block;
+    flex-direction: row;
+    padding: 24px;
+    position: relative;
+}
+
+.bento02__icon {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #4F46E5;
+    border-radius: 8px;
+    padding: 14px;
+    margin-right: 24px;
+    margin-bottom: 14px;
+}
+
+.bento02__icon img {
+    color: #818CF8;
+}
+
+.bento02__content__title {
+    font-family: 'Montserrat';
+    color: #ffffff80;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.bento02:hover .bento02__content__title {
+    color: #ffffff;
+}
+
+.bento02__content__p {
+    font-family: 'Montserrat';
+    color: #A1A1AA;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.bento02__btn__icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    rotate: 90deg;
+    margin: 155px 14px 0px 0px;
+}
+
+/* ------------------BENTO 03------------------ */
+
+.bento03__content {
+    display: block;
+    flex-direction: row;
+    padding: 24px;
+    position: relative;
+}
+
+.bento03__icon {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #4F46E5;
+    border-radius: 8px;
+    padding: 14px;
+    margin-right: 24px;
+    margin-bottom: 14px;
+}
+
+.bento03__icon img {
+    width: 28px;
+    color: #818CF8;
+}
+
+.bento03__content__title {
+    font-family: 'Montserrat';
+    color: #ffffff80;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.bento03:hover .bento03__content__title {
+    color: #ffffff;
+}
+
+.bento03__content__p {
+    font-family: 'Montserrat';
+    color: #A1A1AA;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.bento03__btn__icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    rotate: 90deg;
+    margin: 155px 14px 14px 0px;
+}
+
+/* ------------------BENTO 04------------------ */
+
+.bento04__content {
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    position: relative;
+}
+
+.bento04__icon {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #7C3AED;
+    border-radius: 8px;
+    padding: 14px;
+    margin-right: 24px;
+    margin-bottom: 14px;
+}
+
+.bento04__icon img {
+    width: 28px;
+}
+
+.bento04__content__title {
+    font-family: 'Montserrat';
+    color: #ffffff80;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.bento04:hover .bento04__content__title {
+    color: #ffffff;
+}
+
+.bento04__content__p {
+    font-family: 'Montserrat';
+    color: #A1A1AA;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.bento04__btn__icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    rotate: 90deg;
+    margin: 155px 14px 14px 0px;
+}
+
+/* ------------------BENTO 05------------------ */
+
+.bento05__content {
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    position: relative;
+}
+
+.bento05__icon {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #4F46E5;
+    border-radius: 8px;
+    padding: 14px;
+    margin-right: 24px;
+    margin-bottom: 14px;
+}
+
+.bento05__icon img {
+    width: 28px;
+    color: #818CF8;
+}
+
+.bento05__content__title {
+    font-family: 'Montserrat';
+    color: #ffffff80;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.bento05:hover .bento05__content__title {
+    color: #ffffff;
+}
+
+.bento05__content__p {
+    font-family: 'Montserrat';
+    color: #A1A1AA;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.bento05__btn__icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    rotate: 90deg;
+    margin: 155px 14px 14px 0px;
 }
