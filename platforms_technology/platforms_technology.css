@@ -80,6 +80,7 @@ body {
     position: relative;
     margin-top: 54px;
     padding: 0px 0px 250px 0px;
+    
 }
 
 .hero__line1 {
@@ -90,7 +91,7 @@ body {
 }
 
 .hero__headline1 {
-    position: absolute;
+    position: relative;
     font-family: 'Plus Jakarta Sans';
     font-size: 200px;
     font-weight: 900;
@@ -99,11 +100,12 @@ body {
 }
 
 .hero__img1 {
-    transform: translateX(500%);
-    width: 127px;
-    height: 179px;
+    transform: translateY(-20%);
+    position: absolute;
+    /* width: 127px;
+    height: 179px; */
     margin: 59px 0px 0px 15px;
-    z-index: 3;
+    z-index: 1;
 }
 
 .hero__line2 {
