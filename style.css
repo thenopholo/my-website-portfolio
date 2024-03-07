@@ -47,6 +47,8 @@ body {
 }
 
 .header__logo{
+  display: flex;
+  justify-content: flex-start;
   width: 36px;
   height: 36px;
   position: absolute;
@@ -62,6 +64,9 @@ body {
 }
 
 .header__menuIcon{
+  position: absolute;
+  right: 23px;
+  top: 24px;
   width: 36px;
   color: #ffffff;
   align-items: left;
