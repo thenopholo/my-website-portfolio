@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 24px 0px 0px 0px;
+  position: relative;
 }
 
 .header{
@@ -70,6 +71,32 @@ body {
   width: 36px;
   color: #ffffff;
   align-items: left;
+}
+
+.header__dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #33333380;
+  border: solid 1px #ffffff30;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.header__dropdown a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.header__dropdown a:hover {
+  background-color: #7C3AED
 }
 
 /* HERO CSS*/

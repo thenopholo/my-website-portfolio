@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>TD&D</title>
   </head>
   <body>
@@ -19,7 +19,15 @@
       <header class="header">
         <img src="assets/svg/td&_logo.svg" class="header__logo" alt="tdd_logo" />
         <span class="header__title">_TD&D</span>
-        <button class="header__menu"><img src="assets/svg/menu.svg" alt="menu" class="header__menuIcon"></button>
+        <button class="header__menu">
+          <img src="assets/svg/menu.svg" alt="menu" class="header__menuIcon">
+        </button>
+        <div class="header__dropdown" id="menuDropdown">
+          <a href="#sobre-eu">Sobre eu</a>
+          <a href="#o-que-eu-faco">O que eu faço?</a>
+          <a href="#projetos">O que eu já fiz?</a>
+          <a href="#contato">Contato</a>
+        </div>
       </header>
     </div>
 
@@ -47,7 +55,7 @@
       </div>
     </section>
 
-    <section class="aboutMeSkillEmail">
+    <section id="sobre-eu" class="aboutMeSkillEmail">
       <div class="aboutMeSkillEmail__me">
         <div class="aboutMeSkillEmail__me__flex">
           <div class="aboutMeSkillEmail__me__txtBlock">
@@ -85,7 +93,7 @@
         
     </section>
 
-    <section class="whatIDo">
+    <section id="o-que-eu-faco" class="whatIDo">
       <div class="whstIDo__block">
         <span class="whatIDo__title">O que eu faço?</span>
         <div class="line">
@@ -125,7 +133,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="projetos" class="portfolio">
 
       <div class="portfolio__title">
         <div class="portfolio__title__block">
@@ -580,7 +588,7 @@
 
     </section>
 
-    <section class="contact">
+    <section id="contato" class="contact">
 
 
       <div class="contact__center">
@@ -645,6 +653,7 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="index.js"></script>
+    <script src="/assets/js/testimonials.js"></script>
+    <script src="/assets/js/menu_dropdown.js"></script>
   </body>
 </html>
