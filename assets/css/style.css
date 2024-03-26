@@ -20,7 +20,7 @@ body {
 .headerContainer{
   display: flex;
   justify-content: center;
-  padding: 24px 0px 0px 0px;
+  padding-top: 24px;
   position: relative;
 }
 
@@ -97,6 +97,25 @@ body {
 
 .header__dropdown a:hover {
   background-color: #7C3AED
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    width: 327px;
+    height: 84px;
+  }
+
+  .header__title {
+    font-size: 24px;
+    margin: 24px 200px 0px 84px;
+  }
+
+  .header__logo {
+    width: 36px;
+    height: 36px;
+    top: 18px;
+    right: 270px;
+  }
 }
 
 /* HERO CSS*/
@@ -203,6 +222,63 @@ body {
 .hero__btnIcon{
   width: 176px;
   height: 176px;
+}
+
+@media only screen and (max-width: 414px){
+  .hero__headline1{
+    font-size: 58px;
+    top: 94px;
+    left: 14px;
+  }
+
+  .hero__img1{
+    width: 60px;
+    height: 86px;
+    transform: translateX(270%);
+  }
+
+  .hero__headline2{
+    font-size: 58px;
+    margin-left: 70px;
+  }
+
+  .hero__img2{
+    width: 109px;
+    height: 135px;
+    left: 18px;
+    top: 164px;
+  }
+
+  .hero__littletxt{
+    font-size: 16px;
+    width: 258px;
+    left: 134px;
+    margin: 0px;
+  }
+
+  .hero__btn{
+    margin-top: 74px;
+    transform: translateX(30%);
+    position: relative;
+    width: 327px;
+    height: 64px
+  }
+
+  .hero__btnText{
+    position: absolute;
+    top: 7px;
+    left: 24px;
+    width: 194px;
+    font-size: 18px;
+  }
+
+  .hero__btnIcon{
+    position: absolute;
+    top: 7px;
+    right: 14px;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /* aboutMeSkillEmail CSS*/
@@ -358,6 +434,30 @@ body {
   cursor: pointer;
   position: absolute;
   right: 0px;
+}
+
+@media only screen and (max-width: 414px){
+  .aboutMeSkillEmail{
+    display: block;
+  }
+
+  .aboutMeSkillEmail__me{
+    display: block;
+    transform: translateX(10%);
+    width: 350px;
+    height: 513px;
+  }
+
+  .aboutMeSkillEmail__me__callTxt{
+    width: 295px;
+    height: 20px;
+    font-size: 16px;
+  }
+
+  .aboutMeSkillEmail__me__myPhoto{
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /* What I Do */
