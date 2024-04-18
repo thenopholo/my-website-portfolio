@@ -15,6 +15,10 @@ body {
   background-color: #18181B;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* HEADER CSS*/
 
 .headerContainer{
@@ -140,6 +144,7 @@ body {
   font-size: 200px;
   font-weight: 900;
   color: #ffffff;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.75));
   z-index: 2;
 }
 
@@ -147,7 +152,7 @@ body {
   transform: translateX(500%);
   width: 127px;
   height: 179px;
-  margin: 59px 0px 0px 15px;
+  margin: 39px 0px 0px 5px;
   z-index: 3;
 }
 
@@ -163,6 +168,7 @@ body {
   font-weight: 900;
   color: #ffffff;
   position: relative;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.75));
   z-index: 2;
 }
 
@@ -171,7 +177,8 @@ body {
   z-index: 1;
   width: 447px;
   height: 451px;
-  right: 1080px;
+  top: 300px;
+  right: 885px;
 }
 
 .hero__cta{
@@ -185,17 +192,17 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #A1A1AA;
-  width: 392px;
+  width: 330px;
   height: 114px;
   margin: 70px 0px 0px 0px;
   position: absolute;
-  right: 670px;
+  right: 540px;
 }
 
 .hero__ctaLink{
   text-decoration: none;
   position: absolute;
-  right: 150px;
+  right: 100px;
 }
 
 .hero__btn{
@@ -225,6 +232,10 @@ body {
 }
 
 @media only screen and (max-width: 414px){
+  .hero{
+    padding-bottom: 156px;
+  }
+
   .hero__headline1{
     font-size: 58px;
     top: 94px;
@@ -234,7 +245,8 @@ body {
   .hero__img1{
     width: 60px;
     height: 86px;
-    transform: translateX(270%);
+    margin-top: 60px;
+    transform: translateX(280%);
   }
 
   .hero__headline2{
@@ -258,9 +270,9 @@ body {
 
   .hero__btn{
     margin-top: 74px;
-    transform: translateX(30%);
+    transform: translateX(20%);
     position: relative;
-    width: 327px;
+    width: 368px;
     height: 64px
   }
 
@@ -275,7 +287,7 @@ body {
   .hero__btnIcon{
     position: absolute;
     top: 7px;
-    right: 14px;
+    right: 4px;
     width: 48px;
     height: 48px;
   }
@@ -284,9 +296,18 @@ body {
 /* aboutMeSkillEmail CSS*/
 
 .aboutMeSkillEmail{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 16px;
   justify-content: center;
-  margin-bottom: 54px;
+  margin: 0px 24px 54px 24px;
+}
+
+.aboutMeSkillEmail__block{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 16px;
 }
 
 
@@ -294,13 +315,10 @@ body {
   background-color: #27272A;
   border-radius: 24px;
   padding: 24px;
-  width: 648px;
-  height: 458px;
 }
 
 .aboutMeSkillEmail__me__flex{
   display: flex;
-  justify-content: space-between;
 }
 
 .aboutMeSkillEmail__me__txtBlock{
@@ -319,7 +337,7 @@ body {
 .aboutMeSkillEmail__me__helloWord{
   font-family: 'Montserrat';
   color: #ffffff;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 600;
   position: absolute;
   top: 200px;
@@ -333,27 +351,21 @@ body {
 .aboutMeSkillEmail__me__description{
   font-family: 'Montserrat';
   color: #A1A1AA;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   margin-top: 10px;
   text-align: justify;
-}
-
-.aboutMeSkillEmail__block{
-  margin-left: 24px;
 }
 
 .aboutMeSkillEmail__skills{
   background-color: #7C3AED;
   border-radius: 24px;
   padding: 24px 32px;
-  width: 648px;
-  height: 220px;
+  height: 100%;
 }
 
 .aboutMeSkillEmail__skills_logos{
   display: flex;
-  justify-content: center;
 }
 
 .aboutMeSkillEmail__skills_txtFlex{
@@ -383,10 +395,8 @@ body {
 
 .aboutMeSkillEmail__email{
   background-color: #4F46E5;
-  width: 648px;
-  height: 222px;
+  height: 100%;
   border-radius: 24px;
-  margin-top: 18px;
   display: flex;
   position: relative;
 }
@@ -416,6 +426,7 @@ body {
 
 .aboutMeSkillEmail__email__txt2{
   font-family: 'Montserrat';
+  text-align: right;
   color: #818CF8;
   font-size: 24px;
   font-weight: 400;
@@ -428,7 +439,7 @@ body {
 .aboutMeSkillEmail__email__btn2{
   background-color: #ffffff;
   width: 105px;
-  height: 222px;
+  height: 247px;
   border: none;
   border-radius: 24px;
   cursor: pointer;
@@ -438,25 +449,70 @@ body {
 
 @media only screen and (max-width: 414px){
   .aboutMeSkillEmail{
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    justify-content: center;
+    width: 327px%;
   }
 
-  .aboutMeSkillEmail__me{
+  .aboutMeSkillEmail__block{
+    width: 100%;
+  }
+
+  .aboutMeSkillEmail__me__flex{
+    position: relative;
     display: block;
-    transform: translateX(10%);
-    width: 350px;
-    height: 513px;
+    
   }
 
   .aboutMeSkillEmail__me__callTxt{
     width: 295px;
     height: 20px;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .aboutMeSkillEmail__me__myPhoto{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
+    margin-top: 12px;
+  }
+
+  .aboutMeSkillEmail__me__helloWord{
+    font-size: 48px;
+    position: absolute;
+    top: 400px;
+  }
+
+  .aboutMeSkillEmail__me__description{
+    font-size: 28px;
+    margin-top: 85px;
+    text-align: left;
+  }
+
+  .aboutMeSkillEmail__skills_txtFlex{
+    margin-top: 0px;
+  }
+
+  .aboutMeSkillEmail__skills_txt{
+    font-size: 32px;
+  }
+
+  .aboutMeSkillEmail__skills_logos{
+    display: inline;
+    width: 335px;
+  }
+
+  .aboutMeSkillEmail__email__btn2{
+    height: 235px;
+  }
+
+  .aboutMeSkillEmail__email__txt{
+    font-size: 32px;
+  }
+
+  .aboutMeSkillEmail__email__txt2{
+    display: none;
   }
 }
 
@@ -1053,18 +1109,3 @@ cursor: pointer;
   font-weight: 300;
   color: #A1A1AA;
 }
-
-/* Add media queries for responsive breakpoints as needed */
-@media (min-width: 600px) {
-  /* styles for screens larger than 600px */
-}
-
-@media (min-width: 900px) {
-  /* styles for screens larger than 900px */
-}
-
-@media (min-width: 1200px) {
-  /* styles for screens larger than 1200px */
-}
-
-/* Additional global styles and element styles as needed */
