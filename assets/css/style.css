@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -15,25 +16,25 @@ body {
   background-color: #18181B;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /* HEADER CSS*/
 
-.headerContainer{
+.headerContainer {
   display: flex;
   justify-content: center;
   padding-top: 24px;
-  position: relative;
+  /* position: relative; */
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   position: fixed;
   top: 24px;
-  width: 547px;
+  width: auto;
   height: 84px;
   background-color: #33333380;
   border: solid 1px #ffffff30;
@@ -42,26 +43,27 @@ a{
   z-index: 3;
 }
 
-.header__title{
+.header__title {
   font-family: 'Plus Jakarta Sans';
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
-  margin: 24px 300px 24px 10px;
+  margin: 24px 300px 24px 90px;
   position: relative;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
   justify-content: flex-start;
   width: 36px;
   height: 36px;
   position: absolute;
   top: 18px;
+  left:50px;
   right: 480px;
 }
 
-.header__menu{
+.header__menu {
   background-color: transparent;
   color: #ffffff;
   border: none;
@@ -69,41 +71,79 @@ a{
 }
 
 .header__menuIcon{
-  position: absolute;
-  right: 23px;
-  top: 24px;
-  width: 36px;
-  color: #ffffff;
-  align-items: left;
-}
-
-.header__dropdown {
   display: none;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  background-color: #33333380;
-  border: solid 1px #ffffff30;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
-.header__dropdown a {
+.header__dropdown{
+  display: none;
+}
+
+.ulList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 400px;
+  position: relative;
+  right:40px;
+  top: 29px;
+}
+
+.ulList a{
   color: #ffffff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
+  transition: 500ms;
 }
 
-.header__dropdown a:hover {
-  background-color: #7C3AED
+.itemList:hover{
+  font-size: 20px;
+  color: #7C3AED;
+  
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 430px) {
+  .headerList{
+    display: none;
+  }
+
+  .header__menuIcon {
+    display: block;
+    position: absolute;
+    right: 23px;
+    top: 24px;
+    width: 36px;
+    color: #ffffff;
+    align-items: left;
+  }
+
+  .header__dropdown {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #33333380;
+    border: solid 1px #ffffff30;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .header__dropdown a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header__dropdown a:hover {
+    background-color: #7C3AED
+  }
   .header {
     width: 327px;
     height: 84px;
@@ -119,26 +159,27 @@ a{
     height: 36px;
     top: 18px;
     right: 270px;
+    left: 22px;
   }
 }
 
 /* HERO CSS*/
 
-.hero{
+.hero {
   width: 100%;
   position: relative;
   margin-top: 54px;
   padding: 0px 0px 250px 0px;
 }
 
-.hero__line1{
+.hero__line1 {
   display: flex;
   justify-content: center;
   padding: 24px;
   z-index: 2;
 }
 
-.hero__headline1{
+.hero__headline1 {
   position: absolute;
   font-family: 'Plus Jakarta Sans';
   font-size: 200px;
@@ -148,7 +189,7 @@ a{
   z-index: 2;
 }
 
-.hero__img1{
+.hero__img1 {
   transform: translateX(500%);
   width: 127px;
   height: 179px;
@@ -156,13 +197,13 @@ a{
   z-index: 3;
 }
 
-.hero__line2{
+.hero__line2 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.hero__headline2{
+.hero__headline2 {
   font-family: 'Plus Jakarta Sans';
   font-size: 200px;
   font-weight: 900;
@@ -172,7 +213,7 @@ a{
   z-index: 2;
 }
 
-.hero__img2{
+.hero__img2 {
   position: absolute;
   z-index: 1;
   width: 447px;
@@ -181,13 +222,13 @@ a{
   right: 885px;
 }
 
-.hero__cta{
+.hero__cta {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.hero__littletxt{
+.hero__littletxt {
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 400;
@@ -199,13 +240,13 @@ a{
   right: 540px;
 }
 
-.hero__ctaLink{
+.hero__ctaLink {
   text-decoration: none;
   position: absolute;
   right: 100px;
 }
 
-.hero__btn{
+.hero__btn {
   display: flex;
   justify-content: center;
   background-color: #33333380;
@@ -222,53 +263,53 @@ a{
   cursor: pointer;
 }
 
-.hero__btnText{
+.hero__btnText {
   margin: 15px 0px 0px 0px;
 }
 
-.hero__btnIcon{
+.hero__btnIcon {
   width: 176px;
   height: 176px;
 }
 
-@media only screen and (max-width: 414px){
-  .hero{
+@media only screen and (max-width: 430px) {
+  .hero {
     padding-bottom: 156px;
   }
 
-  .hero__headline1{
+  .hero__headline1 {
     font-size: 58px;
     top: 94px;
     left: 14px;
   }
 
-  .hero__img1{
+  .hero__img1 {
     width: 60px;
     height: 86px;
     margin-top: 60px;
     transform: translateX(280%);
   }
 
-  .hero__headline2{
+  .hero__headline2 {
     font-size: 58px;
     margin-left: 70px;
   }
 
-  .hero__img2{
+  .hero__img2 {
     width: 109px;
     height: 135px;
     left: 18px;
     top: 164px;
   }
 
-  .hero__littletxt{
+  .hero__littletxt {
     font-size: 16px;
     width: 258px;
     left: 134px;
     margin: 0px;
   }
 
-  .hero__btn{
+  .hero__btn {
     margin-top: 74px;
     transform: translateX(20%);
     position: relative;
@@ -276,7 +317,7 @@ a{
     height: 64px
   }
 
-  .hero__btnText{
+  .hero__btnText {
     position: absolute;
     top: 7px;
     left: 24px;
@@ -284,7 +325,7 @@ a{
     font-size: 18px;
   }
 
-  .hero__btnIcon{
+  .hero__btnIcon {
     position: absolute;
     top: 7px;
     right: 4px;
@@ -295,7 +336,7 @@ a{
 
 /* aboutMeSkillEmail CSS*/
 
-.aboutMeSkillEmail{
+.aboutMeSkillEmail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 16px;
@@ -303,7 +344,7 @@ a{
   margin: 0px 24px 54px 24px;
 }
 
-.aboutMeSkillEmail__block{
+.aboutMeSkillEmail__block {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -311,30 +352,30 @@ a{
 }
 
 
-.aboutMeSkillEmail__me{
+.aboutMeSkillEmail__me {
   background-color: #27272A;
   border-radius: 24px;
   padding: 24px;
 }
 
-.aboutMeSkillEmail__me__flex{
+.aboutMeSkillEmail__me__flex {
   display: flex;
 }
 
-.aboutMeSkillEmail__me__txtBlock{
+.aboutMeSkillEmail__me__txtBlock {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.aboutMeSkillEmail__me__callTxt{
+.aboutMeSkillEmail__me__callTxt {
   font-family: 'Montserrat';
   color: #ffffff;
   font-size: 32px;
   font-weight: 300;
 }
 
-.aboutMeSkillEmail__me__helloWord{
+.aboutMeSkillEmail__me__helloWord {
   font-family: 'Montserrat';
   color: #ffffff;
   font-size: 44px;
@@ -343,12 +384,12 @@ a{
   top: 200px;
 }
 
-.aboutMeSkillEmail__me__myPhoto{
+.aboutMeSkillEmail__me__myPhoto {
   width: 250px;
   height: 249px;
 }
 
-.aboutMeSkillEmail__me__description{
+.aboutMeSkillEmail__me__description {
   font-family: 'Montserrat';
   color: #A1A1AA;
   font-size: 28px;
@@ -357,43 +398,43 @@ a{
   text-align: justify;
 }
 
-.aboutMeSkillEmail__skills{
+.aboutMeSkillEmail__skills {
   background-color: #7C3AED;
   border-radius: 24px;
   padding: 24px 32px;
   height: 100%;
 }
 
-.aboutMeSkillEmail__skills_logos{
+.aboutMeSkillEmail__skills_logos {
   display: flex;
 }
 
-.aboutMeSkillEmail__skills_txtFlex{
+.aboutMeSkillEmail__skills_txtFlex {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-.aboutMeSkillEmail__skills_txt{
+.aboutMeSkillEmail__skills_txt {
   font-family: 'Montserrat';
   color: #ffffff;
   font-size: 32px;
   font-weight: 500;
 }
 
-.aboutMeSkillEmail__skills_btn{
+.aboutMeSkillEmail__skills_btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.aboutMeSkillEmail__skills_btnIcon{
+.aboutMeSkillEmail__skills_btnIcon {
   width: 36px;
   height: 36px;
   color: #ffffff;
 }
 
-.aboutMeSkillEmail__email{
+.aboutMeSkillEmail__email {
   background-color: #4F46E5;
   height: 100%;
   border-radius: 24px;
@@ -401,7 +442,7 @@ a{
   position: relative;
 }
 
-.aboutMeSkillEmail__email__txt{
+.aboutMeSkillEmail__email__txt {
   font-family: 'Montserrat';
   color: #ffffff;
   font-size: 32px;
@@ -410,21 +451,21 @@ a{
   padding: 24px 0px 32px 24px;
 }
 
-.aboutMeSkillEmail__email__btn{
+.aboutMeSkillEmail__email__btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  
+
 }
 
-.aboutMeSkillEmail__email__btnIcon{
+.aboutMeSkillEmail__email__btnIcon {
   width: 36px;
   height: 36px;
   color: #ffffff;
   margin: 150px 0px 0px 10px;
 }
 
-.aboutMeSkillEmail__email__txt2{
+.aboutMeSkillEmail__email__txt2 {
   font-family: 'Montserrat';
   text-align: right;
   color: #818CF8;
@@ -436,7 +477,7 @@ a{
   bottom: 10px;
 }
 
-.aboutMeSkillEmail__email__btn2{
+.aboutMeSkillEmail__email__btn2 {
   background-color: #ffffff;
   width: 105px;
   height: 247px;
@@ -447,8 +488,8 @@ a{
   right: 0px;
 }
 
-@media only screen and (max-width: 414px){
-  .aboutMeSkillEmail{
+@media only screen and (max-width: 430px) {
+  .aboutMeSkillEmail {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 16px;
@@ -456,110 +497,110 @@ a{
     width: 327px%;
   }
 
-  .aboutMeSkillEmail__block{
+  .aboutMeSkillEmail__block {
     width: 100%;
   }
 
-  .aboutMeSkillEmail__me__flex{
+  .aboutMeSkillEmail__me__flex {
     position: relative;
     display: block;
-    
+
   }
 
-  .aboutMeSkillEmail__me__callTxt{
+  .aboutMeSkillEmail__me__callTxt {
     width: 295px;
     height: 20px;
     font-size: 24px;
   }
 
-  .aboutMeSkillEmail__me__myPhoto{
+  .aboutMeSkillEmail__me__myPhoto {
     width: 350px;
     height: 350px;
     margin-top: 12px;
   }
 
-  .aboutMeSkillEmail__me__helloWord{
+  .aboutMeSkillEmail__me__helloWord {
     font-size: 48px;
     position: absolute;
     top: 400px;
   }
 
-  .aboutMeSkillEmail__me__description{
+  .aboutMeSkillEmail__me__description {
     font-size: 28px;
     margin-top: 85px;
     text-align: left;
   }
 
-  .aboutMeSkillEmail__skills_txtFlex{
-    margin-top: 0px;
+  .aboutMeSkillEmail__skills_txtFlex {
+    margin-top: 60px;
   }
 
-  .aboutMeSkillEmail__skills_txt{
+  .aboutMeSkillEmail__skills_txt {
     font-size: 32px;
   }
 
-  .aboutMeSkillEmail__skills_logos{
+  .aboutMeSkillEmail__skills_logos {
     display: inline;
     width: 335px;
   }
 
-  .aboutMeSkillEmail__email__btn2{
+  .aboutMeSkillEmail__email__btn2 {
     height: 235px;
   }
 
-  .aboutMeSkillEmail__email__txt{
+  .aboutMeSkillEmail__email__txt {
     font-size: 32px;
   }
 
-  .aboutMeSkillEmail__email__txt2{
+  .aboutMeSkillEmail__email__txt2 {
     display: none;
   }
 }
 
 /* What I Do */
 
-.whatIDo{
+.whatIDo {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 54px;
 }
 
-.whatIDo__block{
+.whatIDo__block {
   width: 1312px;
 }
 
-.whatIDo__title{
+.whatIDo__title {
   font-family: 'Montserrat';
   color: #A1A1AA;
   font-size: 36px;
   font-weight: 600;
 }
 
-.whstIDo__block h2{
+.whstIDo__block h2 {
   font-family: 'Plus Jakarta Sans';
   font-size: 92px;
 }
 
-.line{
+.line {
   display: flex;
 }
 
-.whatIDo__line1{
+.whatIDo__line1 {
   color: #ffffff;
   margin-right: 24px;
 }
 
-.whatIDo__line2{
+.whatIDo__line2 {
   color: #52525B;
 }
 
-.whatIDo__line3{
+.whatIDo__line3 {
   color: #4F46E5;
   margin-right: 24px;
 }
 
-.whatIDo__line4{
+.whatIDo__line4 {
   color: #7C3AED;
   margin-right: 24px;
 }
@@ -583,7 +624,7 @@ a{
   margin-right: 24px;
 }
 
-.whatIDo__line8__mobileIcon{
+.whatIDo__line8__mobileIcon {
   margin-right: 24px;
 }
 
@@ -597,31 +638,98 @@ a{
 }
 
 
-.portfolio{
+@media only screen and (max-width: 430px) {
+  .whatIDo {
+    /* display: grid; */
+    padding: 0px 24px !important;
+  }
+
+  .whatIDo__block {
+    /* display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: px; */
+
+  }
+
+  .line {
+    width: 380px;
+  }
+
+  .whatIDo__title {
+    font-size: 22px;
+  }
+
+  .whstIDo__block h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 36px;
+  }
+
+  .whatIDo__line1 {
+    margin-right: 8px;
+  }
+
+  .line4 {
+    position: relative;
+  }
+
+  .web_n_mobile_icons {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .whatIDo__icon {
+    width: 46px;
+  }
+
+  .whatIDo__line3 {
+    margin-right: 8px;
+  }
+
+  .whatIDo__icon3 {
+    width: 46px;
+  }
+
+  .line6 {
+    position: relative;
+  }
+
+  .flutter_icon {
+    position: absolute;
+    right: 215px;
+    bottom: 0px;
+  }
+}
+
+/* PROTIFILO SECTION */
+
+.portfolio {
   width: 100%;
 }
 
-.portfolio__title{
+.portfolio__title {
   display: flex;
   justify-content: center;
   font-family: 'Montserrat';
   margin-bottom: 54px;
 }
 
-.portfolio__title__block h2{
+.portfolio__title__block h2 {
   font-size: 128px;
   text-align: center;
   color: #ffffff;
 }
 
-.portfolio__title__block p{
+.portfolio__title__block p {
   font-size: 36px;
-  color: #A1A1AA;  
+  color: #A1A1AA;
   margin-bottom: 54px;
   text-align: center;
 }
 
-.portfolio__flex{
+.portfolio__flex {
   display: flex;
   justify-content: center;
   background-color: #27272A;
@@ -631,12 +739,12 @@ a{
   margin: 0px 0px 54px 0px;
 }
 
-.portfolio__flex__right{
+.portfolio__flex__right {
   display: flex;
   margin-top: 44px;
 }
 
-.portfolio__flex__right img{
+.portfolio__flex__right img {
   margin: 34px 0px 0px 24px;
 }
 
@@ -649,27 +757,27 @@ a{
   margin: 34px 24px 0px 0px;
 }
 
-.dark_ae_logo{
+.dark_ae_logo {
   width: 62px;
   height: 62px;
 }
 
-.dark_ai_ps_logo{
+.dark_ai_ps_logo {
   width: 112px;
   height: 64px;
 }
 
-.dark_dart_flutter_logo{
+.dark_dart_flutter_logo {
   width: 115px;
   height: 71px;
 }
 
-.dark_webdev_logo{
+.dark_webdev_logo {
   width: 134px;
   height: 58px;
 }
 
-.flex__right__txt{
+.flex__right__txt {
   font-family: 'Montserrat';
   margin: 0px 24px;
 }
@@ -679,12 +787,12 @@ a{
   margin: 0px 24px;
 }
 
-.flex__right__txt h3{
+.flex__right__txt h3 {
   font-size: 32px;
   color: #ffffff;
 }
 
-.flex__left__txt h3{
+.flex__left__txt h3 {
   font-size: 32px;
   color: #ffffff;
 }
@@ -703,7 +811,7 @@ a{
   text-align: left;
 }
 
-.portfolio__flex_right__title{
+.portfolio__flex_right__title {
   width: 237px;
   height: 200px;
   background-color: #4F46E5;
@@ -715,7 +823,7 @@ a{
   font-weight: 600;
 }
 
-.portfolio__flex_right__title button{
+.portfolio__flex_right__title button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -727,11 +835,11 @@ a{
   cursor: pointer;
 }
 
-.portfolio__flex_right__title h3{
+.portfolio__flex_right__title h3 {
   margin-top: 14px;
 }
 
-.portfolio__flex_left__title{
+.portfolio__flex_left__title {
   width: 237px;
   height: 200px;
   background-color: #7C3AED;
@@ -747,52 +855,173 @@ a{
   margin-top: 14px;
 }
 
+@media only screen and (max-width: 430px) {
+  .portfolio__flex{
+    padding-bottom: 14px;
+  }
+
+  .portfolio__flex a{
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio__title__block h2 {
+    font-size: 46px;
+  }
+
+  .portfolio__title__block p {
+    font-size: 16px;
+  }
+
+
+  .portfolio__flex {
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+    .logo_icons {
+      width: 56px !important;
+      margin-top: 24px !important;
+      margin-left: 10px ;
+    }
+
+    .img_service{
+      width: 385px;
+      margin-bottom: 14px;
+      margin: 0 auto;
+    }
+
+    .logo_icons_flutter{
+      width: 86px !important;
+      margin-top: 24px !important;
+      margin-left: 10px !important;
+    }
+
+  .portfolio__flex__right,
+  .portfolio__flex__left {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .portfolio__flex img,
+  .portfolio__flex__right img,
+  .portfolio__flex__left img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .portfolio__flex_right__title,
+  .portfolio__flex_left__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 385px;
+    height: 129px;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+
+    .portfolio__flex_right__title h3,
+    .portfolio__flex_left__title h3 {
+      margin-right: 14px;
+    }
+
+    .portfolio__flex_right__title button,
+    .portfolio__flex_left__title button {
+      margin-top: 18px;
+    }
+
+  .flex__right__txt,
+  .flex__left__txt {
+    margin: 12px 12px 0px 12px;
+    height: 100px;
+  }
+
+  .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .img_app{
+    margin-top: 42px;
+  }
+
+    .mobile_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      grid-gap: 8px;
+    }
+  
+    .mobile_grid > .btn {
+      grid-row: 3;
+    }
+  
+      .mobile_grid> .flex {
+      grid-row: 2;
+      width: 100%;
+    }
+  
+      .mobile_grid > .flex__left__txt {
+      grid-row: 1;
+    }
+
+}
+
 /* PARNERSHIPS CSS */
 
-.partnerships{
+.partnerships {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.parnerships_center{
+.parnerships_center {
   margin-bottom: 54px;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
 
-.parnerships__eveo{
-  width: 1312px;  
+.parnerships__eveo {
+  width: 1312px;
   height: 402px;
   background-color: #ffffff;
   border-radius: 24px;
   padding: 16px 24px;
   position: relative;
-  margin-bottom: 24px;;
+  margin-bottom: 24px;
+  ;
   margin: 0 auto;
 }
 
-.parnerships__eveo__txt{
+.parnerships__eveo__txt {
   display: flex;
   justify-content: space-between;
 }
 
-.parnerships__eveo__txt h3{
+.parnerships__eveo__txt h3 {
   font-family: 'Montserrat';
   font-size: 32px;
   font-weight: 400;
   color: #18181B;
 }
 
-.parnerships__eveo__txt p{
+.parnerships__eveo__txt p {
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 300;
   color: #18181B;
 }
 
-.parnerships__eveo__logo{
+.parnerships__eveo__logo {
   width: 434px;
   height: 138px;
   position: absolute;
@@ -800,12 +1029,12 @@ a{
   top: 150px;
 }
 
-.parnership__eveo__bottom{
+.parnership__eveo__bottom {
   display: flex;
   justify-content: space-between;
 }
 
-.parnerships__eveo__bottom__number{
+.parnerships__eveo__bottom__number {
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 300;
@@ -814,8 +1043,8 @@ a{
   bottom: 16px;
 }
 
-.parnerships__eveo__btn{
-  background-color:  transparent;
+.parnerships__eveo__btn {
+  background-color: transparent;
   border: none;
   cursor: pointer;
   position: absolute;
@@ -823,17 +1052,17 @@ a{
   right: 40px;
 }
 
-.parnership__eveo__bottom_arrow{
+.parnership__eveo__bottom_arrow {
   width: 41px;
   height: 41px;
 }
 
-.parnerships__otherBrands{
+.parnerships__otherBrands {
   display: flex;
   justify-content: center;
 }
 
-.parnerships__otherBrands__v4{
+.parnerships__otherBrands__v4 {
   width: 648px;
   height: 270px;
   background-color: #4F46E5;
@@ -842,7 +1071,7 @@ a{
   position: relative;
 }
 
-.parnerships__otherBrands__v4__txt{
+.parnerships__otherBrands__v4__txt {
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 300;
@@ -850,7 +1079,7 @@ a{
   text-align: right;
 }
 
-.parnerships__otherBrands__v4__logo{
+.parnerships__otherBrands__v4__logo {
   width: 392px;
   height: 84px;
   position: absolute;
@@ -858,12 +1087,12 @@ a{
   top: 90px;
 }
 
-.parnerships__otherBrands__v4__bottom{
+.parnerships__otherBrands__v4__bottom {
   display: flex;
   justify-content: space-between;
 }
 
-.parnerships__otherBrands__v4__number{
+.parnerships__otherBrands__v4__number {
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 300;
@@ -872,7 +1101,7 @@ a{
   bottom: 16px;
 }
 
-.parnerships__otherBrands__v4__btn{
+.parnerships__otherBrands__v4__btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -882,12 +1111,12 @@ a{
   cursor: pointer;
 }
 
-.parnerships__otherBrands__v4__bottom__arrow{
+.parnerships__otherBrands__v4__bottom__arrow {
   width: 21px;
   height: 21px;
 }
 
-.parnerships__otherBrands__ambev{
+.parnerships__otherBrands__ambev {
   width: 648px;
   height: 270px;
   background-color: #7C3AED;
@@ -897,7 +1126,7 @@ a{
   margin-left: 24px;
 }
 
-.parnerships__otherBrands__ambev__txt{
+.parnerships__otherBrands__ambev__txt {
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 300;
@@ -905,7 +1134,7 @@ a{
   text-align: right;
 }
 
-.parnerships__otherBrands__ambev__logo{
+.parnerships__otherBrands__ambev__logo {
   width: 392px;
   height: 84px;
   position: absolute;
@@ -914,23 +1143,23 @@ a{
 }
 
 
-.testmonials{
+.testmonials {
   width: 100%;
   margin-bottom: 54px;
 }
 
-.testmonials__center{
+.testmonials__center {
   display: flex;
   justify-content: center;
 }
 
-.testmonials__title h2{
+.testmonials__title h2 {
   font-size: 128px;
   color: #ffffff;
   font-family: 'Montserrat';
 }
 
-.testmonials__title p{
+.testmonials__title p {
   font-size: 36px;
   color: #A1A1AA;
   font-family: 'Montserrat';
@@ -947,16 +1176,16 @@ a{
   /* white-space: nowrap; */
 }
 
-.testmonials__card__line2{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    /* white-space: nowrap; */
+.testmonials__card__line2 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  /* white-space: nowrap; */
 }
 
-.tesmonial__card__content{
+.tesmonial__card__content {
   width: 466px;
   height: 242px;
   background-color: #18181B;
@@ -965,26 +1194,26 @@ a{
   padding: 24px;
 }
 
-.tesmonial__card__content:hover{
+.tesmonial__card__content:hover {
   background-color: #4F46E5;
 }
 
-.testmonials__card__content__icon{
+.testmonials__card__content__icon {
   display: flex;
   justify-content: space-between;
 }
 
-.tesmonial__card__content i{
+.tesmonial__card__content i {
   font-size: 40px;
   color: #ffffff;
 }
 
-.tesmonial__card__content ion-icon{
+.tesmonial__card__content ion-icon {
   font-size: 32px;
   color: #ffffff;
 }
 
-.tesmonial__card__user{
+.tesmonial__card__user {
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 300;
@@ -992,7 +1221,7 @@ a{
   margin: 24px 0px 14px 0px;
 }
 
-.testmonials__card__txt{
+.testmonials__card__txt {
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 300;
@@ -1001,78 +1230,78 @@ a{
 
 /* CONTACT CSS */
 
-.contact{
+.contact {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.contact__center{
+.contact__center {
   width: 1312px;
   height: 751px;
   border-radius: 24px;
   background-color: #27272A;
   padding: 24px;
-  
+
 }
 
-.contact h3{
+.contact h3 {
   font-family: 'Montserrat';
   font-size: 36px;
   font-weight: 300;
   color: #A1A1AA;
 }
 
-.contact h2{
+.contact h2 {
   font-family: 'Montserrat';
   font-size: 92px;
   font-weight: 500;
   color: #7C3AED;
 }
 
-.diagonal_arrow_white{
+.diagonal_arrow_white {
   width: 54px;
   height: 54px;
 }
 
-.contact__btn__flex{
+.contact__btn__flex {
   display: flex;
   justify-content: space-between;
   margin-top: 54px;
 }
 
-.contact__btn{
-background-color: #2C2C2F;
-border: none;
-padding: 54px;
-border-radius: 100px;
-cursor: pointer;
+.contact__btn {
+  background-color: #2C2C2F;
+  border: none;
+  padding: 54px;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
-.contact__btn:hover{
+.contact__btn:hover {
   background-color: #7C3AED;
 }
 
-.contact__btn ion-icon{
+.contact__btn ion-icon {
   width: 47px;
   height: 47px;
   color: #A78BFA;
 }
 
-.contact__btn:hover ion-icon{
+.contact__btn:hover ion-icon {
   color: #27272A;
 }
 
-.contact__btn i{
+.contact__btn i {
   font-size: 47px;
   color: #A78BFA;
 }
 
-.contact__btn:hover i{
+.contact__btn:hover i {
   color: #27272A;
 }
 
-.contact__btn__txt{
+.contact__btn__txt {
   font-family: 'Montserrat';
   font-size: 36px;
   font-weight: 500;
@@ -1082,7 +1311,7 @@ cursor: pointer;
 
 /* FOOTER CSS*/
 
-.footer{
+.footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -1090,20 +1319,20 @@ cursor: pointer;
   align-items: flex-end;
 }
 
-.footer__myLogo img{
+.footer__myLogo img {
   width: 36px;
   height: 36px;
   margin-right: 14px;
 }
 
-.footer__myLogo span{
+.footer__myLogo span {
   font-family: 'Plus Jakarta Sans';
   font-size: 20px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.footer p{
+.footer p {
   font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 300;

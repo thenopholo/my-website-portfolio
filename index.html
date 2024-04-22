@@ -22,10 +22,19 @@
         <button class="header__menu">
           <img src="assets/svg/menu.svg" alt="menu" class="header__menuIcon">
         </button>
+        <nav class="headerList">
+          <ul class="ulList">
+            <li><a class="itemList" href="#sobre-eu">Sobre Eu</a></li>
+            <li><a class="itemList" href="#o-que-eu-faco">O que eu faço?</a></li>
+            <li><a class="itemList" href="#projetos">Portfolio</a></li>
+            <li><a class="itemList" href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        
         <div class="header__dropdown" id="menuDropdown">
           <a href="#sobre-eu">Sobre eu</a>
           <a href="#o-que-eu-faco">O que eu faço?</a>
-          <a href="#projetos">O que eu já fiz?</a>
+          <a href="#projetos">Portfolio</a>
           <a href="#contato">Contato</a>
         </div>
       </header>
@@ -99,35 +108,38 @@
       <div class="whstIDo__block">
         <span class="whatIDo__title">O que eu faço?</span>
         <div class="line">
-          <h2 class="whatIDo__line1">Design Gráfico, </h2><img src="assets/svg/hand-waving.svg" class="whatIDo__icon1" alt="hand_waving" />
+          <h2 class="whatIDo__line1">Design Gráfico, </h2>
+          <img src="assets/svg/hand-waving.svg" class="whatIDo__icon" alt="hand_waving" />
         </div>
         <div class="line">
           <h2 class="whatIDo__line2">Motion design,</h2>          
         </div>
         <div class="line">
           <h2 class="whatIDo__line3">UX & UX</h2>
-          <img src="assets/svg/ux-ui.svg" alt="interface_icon">
+          <img src="assets/svg/ux-ui.svg" class="whatIDo__icon" alt="interface_icon">
         </div>
-        <div class="line">
+        <div class="line line4">
           <h2 class="whatIDo__line4">Para Web & Mobile</h2>
-          <img src="assets/svg/web-n-mobile.svg" alt="interface_icon">
+          <img src="assets/svg/web-n-mobile.svg" class="whatIDo__icon web_n_mobile_icons" alt="interface_icon">
         </div>
         <div class="line">
           <h2 class="whatIDo__line5">Moro Em São Paulo</h2>
         </div>
         <div class="line">
           <h2 class="whatIDo__line6">Desde 1992.</h2>
-          <img src="assets/svg/brazil-flag.svg" alt="brazil_flag">
+          <img src="assets/svg/brazil-flag.svg" class="whatIDo__icon" alt="brazil_flag">
         </div>
-        <div class="line">
+        <div class="line line6">
           <h2 class="whatIDo__line7">Desenvolvedor Flutter</h2>
-          <img src="assets/svg/Flutter_logo.svg" alt="">
+          <img src="assets/svg/Flutter_logo.svg" class="whatIDo__icon flutter_icon" alt="Flutter_logo">
         </div>
         <div class="line">
-          <h2 class="whatIDo__line8">Mobile</h2>
-          <img src="assets/svg/mobile.svg" class="whatIDo__line8__mobileIcon" alt="mobile_icon">
-          <h2 class="whatIDo__line8_2">e Flutter Web</h2>
-          <img src="assets/svg/web.svg" alt="web_icon">
+          
+            <h2 class="whatIDo__line8">Mobile</h2>
+            <img src="assets/svg/mobile.svg" class="whatIDo__icon mobile_icon" alt="mobile_icon">
+            <h2 class="whatIDo__line8_2">e Flutter Web</h2>
+            <img src="assets/svg/web.svg" class="whatIDo__icon web_icon" alt="web_icon">
+          
         </div>
         <div class="line">
           <h2 class="whatIDo__line9">Desenvolvimento Full Stack.</h2>
@@ -144,14 +156,16 @@
           <div class="portfolio__flex">
     
             <div class="portfolio__flex__right">
-              <img src="assets/svg/dark_ae_logo.svg" class="dark_ae_logo" alt="dark_ae_logo">
+              <img src="assets/svg/dark_ae_logo.svg" class="dark_ae_logo logo_icons" alt="dark_ae_logo">
               <div class="flex__right__txt">
                 <h3>Motion Design</h3>
                 <p>Esses são alguns dos meus trabalhos de motion, todos destinados a anúncios digitais.</p>
               </div>
             </div>
-    
-            <img src="assets/img/img_motion.png" class="img_motion" alt="img_motion">
+
+            <div class="flex">
+              <img src="assets/img/img_motion.png" class="img_motion img_service" alt="img_motion">
+            </div>
     
             <a href="#">
               <div class="portfolio__flex_right__title">
@@ -164,9 +178,9 @@
     
           </div>
     
-          <div class="portfolio__flex">
+          <div class="portfolio__flex mobile_grid">
     
-            <a href="#">
+            <a class="btn" href="#">
               <div class="portfolio__flex_left__title">
                 <h3>Criativos Para ADS</h3>
                   <button>
@@ -175,27 +189,33 @@
               </div>
             </a>
               
-            <img src="assets/img/img_design.png" class="img_design" alt="img_design">
+            <div class="flex">
+              <img src="assets/img/img_design.png" class="img_design img_service" alt="img_design">
+            </div>
     
             <div class="portfolio__flex__left">
-              <div class="flex__left__txt">
-                <h3>Design Gráfico</h3>
-                <p>Trabalho muito também com peças estáticas tanto para social mídia quanto para ADS.</p>
+              <div class="flex__left__txt text_grid">
+                <div class="txt">
+                  <h3>Design Gráfico</h3>
+                  <p>Trabalho muito também com peças estáticas tanto para social mídia quanto para ADS.</p>
+                </div>
+                <img src="assets/svg/dark_ai_ps_logo.svg" class="dark_ai_ps_logo logo_icons" alt="dark_ai_ps_logo">
               </div>
-              <img src="assets/svg/dark_ai_ps_logo.svg" class="dark_ai_ps_logo" alt="dark_ai_ps_logo">
             </div>
           </div>
     
           <div class="portfolio__flex">
             <div class="portfolio__flex__right">
-              <img src="assets/svg/dark_dart_flutter_logo.svg" class="dark_dart_flutter_logo" alt="dark_dart_flutter_logo">
+              <img src="assets/svg/dark_dart_flutter_logo.svg" class="dark_dart_flutter_logo logo_icons_flutter" alt="dark_dart_flutter_logo">
                 <div class="flex__right__txt">
                   <h3>Desenvolvimento Mobile</h3>
                   <p>Esses são meus principais trabalhos voltados para o desenvolvimento de aplicações usadas em dispositivos móveis.</p>
                 </div>
-              </div>
-    
-            <img src="assets/img/img_app.png" class="img_app" alt="img_app">
+            </div>
+            
+            <div class="flex">
+              <img src="assets/img/img_app.png" class="img_app img_service" alt="img_app">
+            </div>
     
             <a href="#">
               <div class="portfolio__flex_right__title">
@@ -218,15 +238,16 @@
                   </button>
               </div>
             </a>
-    
-            <img src="assets/img/img_web.png" class="img_web" alt="img_web">
+            <div class="flex">
+              <img src="assets/img/img_web.png" class="img_web img_service" alt="img_web">
+            </div>
     
             <div class="portfolio__flex__left">
               <div class="flex__left__txt">
                 <h3>Desenvolvimento Web</h3>
                 <p>Também realizo trabalhos para Web, desde sites tradicionais até aplicações e sistemas que rodas nos principais browsers.</p>
               </div>
-              <img src="assets/svg/dark_webdev_logo.svg" class="dark_webdev_logo" alt="dark_webdev_logo">
+              <img src="assets/svg/dark_webdev_logo.svg" class="dark_webdev_logo logo_icons" alt="dark_webdev_logo">
             </div>
           </div>
         </div>
